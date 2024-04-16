@@ -1,5 +1,5 @@
 html{
-    display: inline;
+    display: inline-block;
     font-family: montesserat, sans-serif;
     margin: 0 !important;
     padding: 0 !important;
@@ -10,32 +10,51 @@ a{
     color: black;
 }
 
-.v-40{
+.w-40{
     width: 40%;
 }
 
-.v-50{
+.w-50{
     width: 50%;
 }
 
-.v-60{
+.w-60{
     width: 60%;
+}
+
+.form-control{
+    width: 280px;
+    padding: 12px 10px;
+    border-radius: 8px;
+    background-color: #f2f2f2;
+    color: black;
+    border: 1px solid black;
+}
+
+.form-control:focus{
+    outline: none;
+    border: 1px solid #860000;
+}
+
+.form-control::placeholder{
+    color: black;
+    padding: 2px;
 }
 
 .content{
     display: flex;
     padding: 1rem;
-    background-color: rgb(138, 132, 132);
-    width: calc(100%-4rem);
+    width: calc(100% - 3rem);
+    background-color: #e6b9b9;
 }
 
-.background-img{
+.backgroud-img {
     height: calc(100vh - 5rem);
     border-radius: 15px;
     background-size: cover;
     object-fit: cover;
-    margin-right: 10px;
     width: 60%;
+    margin-right: 1rem;
 }
 
 .login{
@@ -43,8 +62,71 @@ a{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    border-radius: 15px;
-    background-color: white;
     width: 40%;
-    padding: 40px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 3rem;
 }
+
+.section-btn{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+
+}
+form{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+
+}
+
+.title{
+    font-size: 1.5rem;
+    margin-bottom: 2px;
+}
+
+.name{
+    font-weight: 700 ;
+    color: brown ;
+}
+
+.input{
+    display: flex;
+    flex-direction: column;
+    margin: 5px 0;
+}
+ 
+
+.btn{
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 10px;
+    padding: 15px;
+}
+
+.btn-login{
+    width: 300px;
+    margin: 10px 0;
+    background-color:#860000;
+}
+
+.btn-google{
+    background-color: rgb(213, 128, 37);
+}
+ .btn-facebook{
+    background-color: rgb(39, 39, 171);
+ }
+
+@media only screen and (max-width: 1000px){
+    .backgroud-img{
+        display:none;
+    }
+
+    .login{
+        width: 100%;
+    }
+ }
+
